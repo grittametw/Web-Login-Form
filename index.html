@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Login Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <img src="images/avatar.png" alt="login" />
-    <form>
-        <input type="text" id="email" name="email" value="Email"><br>
-        <input type="text" id="password" name="password" value="png"><br>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1">Remember me</label>
-        <a href="/forgot-password.html">Forgot Password?</a><br>
-        <input type="submit" value="LOGIN">
-    </form>
+    <div class="container">
+        <img src="images/avatar.png" alt="login" />
+        <form>
+            <input type="text" id="email" placeholder="Email" name="email" required><br>
+            <input type="text" id="password" placeholder="Password" name="password" required><br>
+            <label>
+                <input type="checkbox" id="remember" name="remember"> Remember me
+            </label>
+            <a href="/forgot-password.html">Forgot Password?</a><br>
+            <input type="submit" value="LOGIN">
+            <div>Don't have an account? <a href="/">Sign up</a></div>
+        </form>
+    </div>
 </body>
 
 </html>
