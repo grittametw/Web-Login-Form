@@ -11,13 +11,12 @@ body {
 }
 
 .container {
-    background-color: rgba(108, 108, 108, 0.5);
+    background-color: rgba(122, 122, 122, 0.5);
     padding: 24px;
     padding-top: 120px;
     border-radius: 8px;
     text-align: center;
     position: relative;
-    
 }
 
 img {
@@ -29,6 +28,13 @@ img {
     background-color: rgb(255, 255, 255);
 }
 
+label[for="email"],
+label[for="password"] {
+    text-align: left;
+    display: block;
+    margin-left: 4px;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="submit"] {
@@ -37,26 +43,27 @@ input[type="submit"] {
     border: none;
     border-bottom: 2px solid rgb(222, 222, 222);
     font-size: 16px;
-    width: auto;
 }
 
 input[type="submit"] {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
     border: none;
     cursor: pointer;
+    width: 95%;
+    border-radius: 16px;
+    font-size: 14px;
 }
 
 input[type="submit"]:hover {
-    background-color: #b3b3b3;
+    background-color: #fff8f8;
 }
 
 a {
-    color: #007bff;
     text-decoration: none;
     font-size: 14px;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #007bff;
 }
