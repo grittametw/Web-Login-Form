@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/space.jpeg');
+    background-image: url('/images/space.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -8,10 +8,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    background-color: rgba(122, 122, 122, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 24px;
     padding-top: 120px;
     border-radius: 8px;
@@ -30,19 +31,52 @@ img {
 
 label[for="email"],
 label[for="password"] {
+    font-size: 14px;
+    color: #ffffff;
     text-align: left;
     display: block;
-    margin-left: 4px;
+
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #999;
+}
+
+.toggle-password:hover {
+    color: #333;
+}
+
+label[for="remember"] {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="submit"] {
+    width: 280px;
     padding: 8px;
     margin: 8px 0;
     border: none;
     border-bottom: 2px solid rgb(222, 222, 222);
     font-size: 16px;
+
 }
 
 input[type="submit"] {
@@ -50,20 +84,28 @@ input[type="submit"] {
     color: black;
     border: none;
     cursor: pointer;
-    width: 95%;
+    width: 100%;
     border-radius: 16px;
     font-size: 14px;
+    margin-top: 40px;
 }
 
 input[type="submit"]:hover {
-    background-color: #fff8f8;
+    background-color: #dfdede;
 }
 
 a {
     text-decoration: none;
     font-size: 14px;
+    color: #ffffff;
 }
 
 a:hover {
-    color: #007bff;
+    color: #2596be;
+}
+
+.register {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 8px;
 }

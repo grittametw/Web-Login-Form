@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Login Form</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <script src="js/script.js" defer></script>
     <div class="container">
         <img src="images/face2.png" alt="login" />
         <form>
@@ -16,14 +17,20 @@
             <input type="text" id="email" placeholder="Email" name="email" required><br>
             
             <label for="password">Password</label>
-            <input type="text" id="password" placeholder="Password" name="password" required><br>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" name="password" required>
+                <span id="toggle-password" class="toggle-password">&#128065;</span> <!-- Eye icon -->
+            </div>
 
-            <label>
-                <input type="checkbox" id="remember" name="remember"> Remember me
-            </label>
-            <a href="/forgot-password.html">Forgot Password?</a><br>
+            <div class="form-options">
+                <label for="remember">
+                    <input type="checkbox" id="remember" name="remember"> Remember me
+                </label>
+                <a href="pages/forgot-password.html">Forgot Password?</a>
+            </div>
+            
             <input type="submit" value="LOGIN">
-            <div>Don't have an account? <a href="/">Sign up</a></div>
+            <div class="register">Don't have an account? <a href="/">Sign up</a></div>
         </form>
     </div>
 </body>
