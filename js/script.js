@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const passwordInput = document.getElementById('password');
 
     togglePassword.addEventListener('click', function () {
-        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-        passwordInput.setAttribute('type', type);
+        const isPassword = passwordInput.type === 'password';
 
-        togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
+        passwordInput.type = isPassword ? 'text' : 'password';
+        togglePassword.classList.toggle('fa-eye');
+        togglePassword.classList.toggle('fa-eye-slash');
     });
 });
