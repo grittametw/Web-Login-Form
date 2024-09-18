@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,13 @@
 <body>
     <script src="https://kit.fontawesome.com/22ebd5d455.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+
     <div class="container">
         <img src="images/face2.png" alt="login" />
         <form>
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Email" name="email" required>
+            <input type="email" id="email" placeholder="Email" name="email" required
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
 
             <label for="password">Password</label>
             <div class="password-container">
@@ -29,7 +31,7 @@
                 </label>
                 <a href="pages/forgot-password.html">Forgot Password?</a>
             </div>
-            
+
             <input type="submit" value="LOGIN">
             <div class="register">Don't have an account? <a href="/">Sign up</a></div>
         </form>

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     togglePassword.addEventListener('click', function () {
         const isPassword = passwordInput.type === 'password';
 
-        passwordInput.type = isPassword ? 'text' : 'password';
+        passwordInput.type = isPassword ? 'email' : 'password';
         togglePassword.classList.toggle('fa-eye');
         togglePassword.classList.toggle('fa-eye-slash');
     });
